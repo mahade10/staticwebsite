@@ -8,8 +8,10 @@
 		*{
 			margin: 0;
 			padding: 0;
+			box-sizing: border-box;
 			
 		}
+
 
 
 		.dd{
@@ -42,8 +44,9 @@
 			text-decoration: none;
 		}
 		.left,.right{
-			height: 100vh;
-			width: 100%;
+			height: 70vh;
+			width: 50%;
+			float: left;
 
 		}
 		.left{
@@ -56,6 +59,7 @@
 			background-color: #a5bde8;
 			
 		}
+
 		#image{
 			margin-top: 70px;
 			position: relative;
@@ -74,7 +78,7 @@
    					 filter: FlipH;
    					 -ms-filter: "FlipH";
   				}
-			50% {left: 300px;top: 0px;}
+			50% {left: 370px;top: 0px;}
 			90%{left: 0px;top: 0px;
 			   -moz-transform: scaleX(-1);
    			 	-o-transform: scaleX(-1);
@@ -92,6 +96,38 @@
    					 -ms-filter: "FlipH";}
 			
 		}
+		.l1{
+			animation-name: tex;
+			animation-iteration-count: infinite;
+			animation-duration: 2s;
+			 margin-top: 20px;
+			 position: relative;
+		}
+		@keyframes tex{
+			  0%   { left: 0px; top: 0px; }
+       		 50%  { left: 300px; top: 0px; }
+       		 100% { left: 0px; top: 0px; }
+		}
+		.pic{
+			margin-top: 10vh;
+			margin-left: 300px;
+			width: 200px;
+			height: 200px;
+			animation-name: rr;
+			animation-duration: 2s;
+			animation-iteration-count: infinite;
+			position: absolute;
+		}
+		  @keyframes rr {
+        0%   { transform: translateY(0); }
+        50%  { transform: translateY(+100px); }
+        100% { transform: translateY(0); }
+    }
+    .info{
+    	background-color: black;
+    	width: 100%;
+    	height: 120vh;
+    }
 
 	</style>
 </head>
@@ -122,9 +158,13 @@
 
 		<div class="col">
 			<div class="right">
-
+				<h2 class="l1">"গণিতের ভয়<br>
+				করতে হবে জয়"</h2>
+				<img src="mathsolve.png" class="pic">
 			</div>
 		</div>
+	</div>
+	<div class="info">
 		
 	</div>
 	
